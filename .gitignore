@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.local
+.data/
+*.log
+.memory-queue.jsonl*
+.openai/source-workflow-*

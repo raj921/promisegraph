@@ -1,0 +1,6 @@
+node_modules/
+public/footage/
+public/voice/
+out/
+.cache/
+.remotion/

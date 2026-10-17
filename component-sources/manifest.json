@@ -1,0 +1,152 @@
+{
+ "retrievedAt": "2026-10-15",
+ "reference": "https://design.interfere.com/",
+ "installedRegistryComponents": 15,
+ "components": [
+  {
+   "name": "alert",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/alert.json",
+   "registrySnapshot": "component-sources/alert.json",
+   "upstreamPath": "ui/alert.tsx",
+   "upstreamSha256": "5950ac01377e7eedc94b00eb3fee678745e4cc1a72b5343867f0733d07db6660",
+   "localFile": "src/vendor/shadcn/alert.tsx",
+   "localSha256": "3dcb195775600d25894a0727d12b722789d795403e20f53605efed009956b64b"
+  },
+  {
+   "name": "badge",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/badge.json",
+   "registrySnapshot": "component-sources/badge.json",
+   "upstreamPath": "ui/badge.tsx",
+   "upstreamSha256": "dab689d836ad3292b41e7f4986b4e68e5d45c6903e4aeaae8972a82d4aebec29",
+   "localFile": "src/vendor/shadcn/badge.tsx",
+   "localSha256": "73c0dabfa0ba0db7c40d89ff03ca88192312f397472ada92233876c459d9ac55"
+  },
+  {
+   "name": "bento-grid",
+   "upstream": "https://ui.aceternity.com/registry/bento-grid.json",
+   "registrySnapshot": "component-sources/bento-grid.json",
+   "upstreamPath": "components/ui/bento-grid.tsx",
+   "upstreamSha256": "a3cdb12c2f3183385859da768cd5a66a4024dd017230fb278b8f2d2acf85c730",
+   "localFile": "src/vendor/aceternity/bento-grid.tsx",
+   "localSha256": "6a34091d09389ee0088141dabffd5c88b8b76be65f19cc663d57908e19674cc9"
+  },
+  {
+   "name": "button",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/button.json",
+   "registrySnapshot": "component-sources/button.json",
+   "upstreamPath": "ui/button.tsx",
+   "upstreamSha256": "c2b999a96781e6c932632bd089095368e973bf5602e1b1a62156b7d2b43f1e84",
+   "localFile": "src/vendor/shadcn/button.tsx",
+   "localSha256": "ce8b7fdfa8f61a28b4f2069eeb71339429357f4cdf94cd377d68cffd96dbc616"
+  },
+  {
+   "name": "card",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/card.json",
+   "registrySnapshot": "component-sources/card.json",
+   "upstreamPath": "ui/card.tsx",
+   "upstreamSha256": "525c4bb2c051987be64df0e92e1d90174912b219bf541e24ffbc4a3406de49e8",
+   "localFile": "src/vendor/shadcn/card.tsx",
+   "localSha256": "3cc6ea4f27891820b0695352016db840a2b3e4f69e25e6f9f9d41ba5c34992e3"
+  },
+  {
+   "name": "circuit-board",
+   "upstream": "https://componentry.dev/r/circuit-board.json",
+   "registrySnapshot": "component-sources/circuit-board.json",
+   "upstreamPath": "components/ui/circuit-board.tsx",
+   "upstreamSha256": "c511ab553e789cf71336a0de508a79dab417d7e6985cd0074e53dacc200965cb",
+   "localFile": "src/vendor/componentry/circuit-board.tsx",
+   "localSha256": "1e722bc86fd026560cc7b06bd30eb7d5187636d18a9cd1206541aac53eb3242b"
+  },
+  {
+   "name": "dialog",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/dialog.json",
+   "registrySnapshot": "component-sources/dialog.json",
+   "upstreamPath": "ui/dialog.tsx",
+   "upstreamSha256": "fe70a91bb924ef3a40b7504e6847ef9a57aed3b503d2a7dbb7610e821ea40b6f",
+   "localFile": "src/vendor/shadcn/dialog.tsx",
+   "localSha256": "c1640175fb2a6df3279aee17c7f02159492853b7e07f982897333dfc7f6cbdec"
+  },
+  {
+   "name": "input",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/input.json",
+   "registrySnapshot": "component-sources/input.json",
+   "upstreamPath": "ui/input.tsx",
+   "upstreamSha256": "6299a6a387dc55e528aec4342deaea0b83f1ea3a365c135a31a18ee55334f441",
+   "localFile": "src/vendor/shadcn/input.tsx",
+   "localSha256": "c6388f0f1b699d47105a777857adc7d35327a99257a6148ea6393db2c76a2688"
+  },
+  {
+   "name": "native-select",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york-v4/native-select.json",
+   "registrySnapshot": "component-sources/native-select.json",
+   "upstreamPath": "registry/new-york-v4/ui/native-select.tsx",
+   "upstreamSha256": "4bdbce5575dce610fed747df4547a3d494713f4df8d28e09b3ccee62e4d72f93",
+   "localFile": "src/vendor/shadcn/native-select.tsx",
+   "localSha256": "9faf205c7f08dfbaa0ec8be7575a36e24d33dc4ccb0648dccab2a20f365528d2"
+  },
+  {
+   "name": "sidebar",
+   "upstream": "https://ui.aceternity.com/registry/sidebar.json",
+   "registrySnapshot": "component-sources/sidebar.json",
+   "upstreamPath": "components/ui/sidebar.tsx",
+   "upstreamSha256": "0ff0812bd2e8ee8fb98d516004c46dfecd7d5bd2cf03b191c1a8d983d815d0ef",
+   "localFile": "src/vendor/aceternity/sidebar.tsx",
+   "localSha256": "f1549921b175b3328987951adb24e593b9905adf52e9e677447144475376e532",
+   "adaptations": [
+    "Vite utility imports, shared design tokens, semantic links and focus-trapped mobile drawer.",
+    "Fixed desktop navigation does not mutate the mobile drawer state on hover.",
+    "The mobile dialog is limited to the mobile breakpoint and closes on desktop resize."
+   ]
+  },
+  {
+   "name": "skeleton",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/skeleton.json",
+   "registrySnapshot": "component-sources/skeleton.json",
+   "upstreamPath": "ui/skeleton.tsx",
+   "upstreamSha256": "87608e7cc815ad3d88e0b9de6c402bb37b58ea1b38636cf69709da1baff6e334",
+   "localFile": "src/vendor/shadcn/skeleton.tsx",
+   "localSha256": "abdcd92693373e7119018c22fcc7b283daacbe4f6a9a27564d9e3e992c4782c8"
+  },
+  {
+   "name": "sonner",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/sonner.json",
+   "registrySnapshot": "component-sources/sonner.json",
+   "upstreamPath": "ui/sonner.tsx",
+   "upstreamSha256": "771ab8637d27384c3ed030ba3be01a07b90c791c294eae06646250f8e81bc49e",
+   "localFile": "src/vendor/shadcn/sonner.tsx",
+   "localSha256": "65de7d0079860f4b5fd9fa152978597ce784ec5523b400a6f455ee06e27d838b"
+  },
+  {
+   "name": "tabs",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/tabs.json",
+   "registrySnapshot": "component-sources/tabs.json",
+   "upstreamPath": "ui/tabs.tsx",
+   "upstreamSha256": "d41aded0394298102614635e15d709369c6bdae8fe79b918b8341ef39407ee03",
+   "localFile": "src/vendor/shadcn/tabs.tsx",
+   "localSha256": "7bc5b70ac398cd823b60e2eb62fc3d7c58e0774d89175c6539635d827112cdab"
+  },
+  {
+   "name": "textarea",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/textarea.json",
+   "registrySnapshot": "component-sources/textarea.json",
+   "upstreamPath": "ui/textarea.tsx",
+   "upstreamSha256": "ec7c92aaed80f6923a7caa4bfe4eead395b50a7001504fd7fbb0b9381804dae9",
+   "localFile": "src/vendor/shadcn/textarea.tsx",
+   "localSha256": "21e3e15f5b4cb05e12a47dea6b85672e1e163da8833a23da9faa702864f97c55"
+  },
+  {
+   "name": "tooltip",
+   "upstream": "https://ui.shadcn.com/r/styles/new-york/tooltip.json",
+   "registrySnapshot": "component-sources/tooltip.json",
+   "upstreamPath": "ui/tooltip.tsx",
+   "upstreamSha256": "ce6afa34fb9dae51053a863b4c3f7c6e55f3da23b00149f31a8e4402bc963be0",
+   "localFile": "src/vendor/shadcn/tooltip.tsx",
+   "localSha256": "82ad17e96f579c4505e777325012cc7273eebe7e51ce8a46d634eb88c319ad56"
+  }
+ ],
+ "additionalExistingComponent": {
+  "name": "TextShimmer",
+  "source": "https://agent-elements.21st.dev/r/text-shimmer.json",
+  "localFile": "src/vendor/text-shimmer.tsx"
+ }
+}
