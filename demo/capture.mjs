@@ -3,6 +3,9 @@
 import {mkdir,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+const run=promisify(execFile);
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE?pathToFileURL(process.env.PLAYWRIGHT_MODULE).href:'playwright-core');
 const scale=Number(process.env.DEMO_SCALE||1);
 const output=resolve(process.env.DEMO_OUTPUT||`../.data/demo/${scale===2?'4k':'1080p'}`);
@@ -64,6 +67,12 @@ try{
   const lines=['ffconcat version 1.0'];for(let i=0;i<frames.length;i++){lines.push(`file '${frames[i].file}'`,`duration ${Math.max(1/120,frames[i+1]?frames[i+1].timestamp-frames[i].timestamp:1/60).toFixed(6)}`);}if(frames.length)lines.push(`file '${frames.at(-1).file}'`);
   await writeFile(resolve(output,'frames.ffconcat'),lines.join('\n')+'\n');
   console.log(`Recorded ${frames.length} compositor frames in ${duration.toFixed(1)}s. Delivered rate is measured, not assumed to be 60fps.`);
+  // Encode the unedited recording as a usable source asset. No UI redraws,
+  // captions, music, compositing, time compression or editorial cuts here.
+  await run(process.env.FFMPEG_PATH||'ffmpeg',['-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-i',resolve(output,'frames.ffconcat'),'-vf','fps=60','-c:v','libx264','-crf','16','-preset','medium','-pix_fmt','yuv420p','-an','-movflags','+faststart',resolve(output,'real-app-source.mp4')],{maxBuffer:4*1024*1024});
+  const {stdout}=await run(process.env.FFPROBE_PATH||'ffprobe',['-v','error','-show_streams','-show_format','-of','json',resolve(output,'real-app-source.mp4')]);
+  await writeFile(resolve(output,'media-probe.json'),stdout);
+  console.log(`Unedited source movie: ${resolve(output,'real-app-source.mp4')}`);
  }
 }catch(error){await page.screenshot({path:resolve(output,'failure.png')}).catch(()=>{});console.error(await page.locator('body').innerText().catch(()=>''));throw error;}
 finally{await browser.close();}

@@ -4,6 +4,8 @@ Target: 24 seconds, 1920×1080, 60 fps; real application footage, English AI nar
 
 ## Record
 
+On the prepared Mac, double-click **Record-PromiseGraph.command**. It starts a temporary local application for each take, records both resolutions, encodes each unedited source as `real-app-source.mp4`, and saves timestamp/stream metadata under `.data/demo/<timestamp>/`. It uses isolated embedded graphs even when remote database settings exist. It uses the existing server-side DeepSeek configuration and can consume model credits. This is source capture only; it does not claim to create the finished narrated edit.
+
 Install the independent demo dependencies with `npm ci` in this directory. Start the application from its parent directory using a new, disposable graph path:
 
 ```sh
